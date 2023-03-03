@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Home</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script> 
+
+    <style>
+         .event-home{
+        width:100%;
+        height:100%; 
+        margin-top: 9rem; 
+        margin-bottom: 3rem;
+    }
+
+    .out{
+        width:98%;
+        height:98%;
+        border: 3px solid gray; 
+        border-top: 3px double gray;
+        /* background-color: rgb(221, 212, 212); */
+        background-image: linear-gradient(to right, rgb(230, 163, 244) , rgb(255, 255, 94),rgb(168, 249, 56));
+    } 
+    
+    .row-head{
+        width : 100%;
+        height: 25%;    
+        margin-top:2.5rem;        
+    }
+    .row-book{
+        width : 100%;
+        height: 75%;    
+        margin-top:0.5rem;     
+        margin-bottom: 1.5rem;   
+    }
+    P{
+        
+        font-size: 23px;
+        font-weight: 700; 
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        padding: 0.5rem;
+        text-align: center;
+    }
+   #head-title{
+    border: 2px solid black;
+
+   }
+    .colp1{
+            width:  auto;            
+            height: auto;
+            border: 1px solid black;
+            border-radius: 10%;
+            background-color: rgb(157, 243, 239);
+        } 
+       
+    .pic-border{
+        /* border: 1px solid blue;   */
+        margin-top: 40px;
+        /* margin-bottom: 40px;       */
+        height: 8rem;   
+    } 
+    img{   
+        border: 3px solid maroon;
+        width: 100px;
+        height:80%;
+        border-radius: 50%;
+        object-fit: cover;
+    } 
+
+    .col-label-txt{
+        text-align: right;
+        font-weight: 550;
+        padding: 0.25rem;
+
+    }
+    a{
+        text-decoration: none;
+        font-weight: bold;
+        border: 2px solid black;
+        padding: 0.25rem; 
+        box-shadow: 1px 2px gray;
+    }
+    [type="date"]{
+        background-color: rgb(236, 237, 238); 
+        color: black; 
+        font-weight: 500;
+    }
+    /* .col1, .col2 {
+        border: 1px solid red;
+    } */
+    </style>
+</head>
+<body> 
+
+    <div class="container-lg event-home">
+        <div class=" container-lg event-home out">
+            <div class="row row-head container">
+                <div class="col-md-3"></div>
+                <div class="col-md-6">
+                    <p id="head-title">SEARCH EVENTS</p>
+                </div>
+                <div class="col-md-3"></div>
+           
+            </div>
+            <div class="row row-book">
+                <div class="row row-book disp1">
+                    <div class="col-md-3 disp1 col1">
+                        <div class = "colp1">
+                            <div class="colp1 container inner-event">
+                                <div class="row inner-event header">
+                                    <div class="col-md-12 container">
+                                    <p>Event 1</p>
+                                    </div>
+                                </div>
+                                <div class="row inner-event body-det">
+                                    <div class="col-md-4 container">
+                                        <div class="pic-border">
+                                            <img src="/images/E1.png" alt="Adele">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 container">
+                                        <div class="row inner-event label-det">
+                                            <div class="col col-label-txt"><input type="date" id="start" name="trip-start"
+                                                value="2023-03-02"
+                                                min="2023-03-01" max="2023-03-31"></div>
+                                        </div>
+                                        <div class="row inner-event label-det">
+                                            <div class="col col-label-txt">Seats Available :</div>
+                                        </div>
+                                        <div class="row inner-event label-det">
+                                            <div class="col col-label-txt">23</div>
+                                        </div>
+                                        <div class="row inner-event label-det">
+                                            <div class="col col-label-txt">
+                                                <a href="/Event/E1-update.html" target="_blank">Book Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col-md-3 disp1 col1">
+                        <div class = "colp1">
+                            <div class="colp1 container inner-event">
+                                <div class="row inner-event header">
+                                    <div class="col-md-12 container">
+                                    <p>Event 2</p>
+                                    </div>
+                                </div>
+                                <div class="row inner-event body-det">
+                                    <div class="col-md-4 container">
+                                        <div class="pic-border">
+                                            <img src="/images/E2.jpg" alt="ARR">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 container">
+                                        <div class="row inner-event label-det">
+                                        <div class="col col-label-txt"><input type="date" id="start" name="trip-start"
+                                            value="2023-03-02"
+                                            min="2023-03-01" max="2023-03-31"></div>
+                                    </div>
+                                        <div class="row inner-event label-det">
+                                            <div class="col col-label-txt">Seats Available :</div>
+                                        </div>
+                                        <div class="row inner-event label-det">
+                                            <div class="col col-label-txt">23</div>
+                                        </div>
+                                        <div class="row inner-event label-det">
+                                            <div class="col col-label-txt">
+                                                <a href="/Event/E2-update.html" target="_blank">Book Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col-md-3 disp1 col1">
+                        <div class = "colp1">
+                            <div class="colp1 container inner-event">
+                                <div class="row inner-event header">
+                                    <div class="col-md-12 container">
+                                    <p>Event 3</p>
+                                    </div>
+                                </div>
+                                <div class="row inner-event body-det">
+                                    <div class="col-md-4 container">
+                                        <div class="pic-border">
+                                            <img src="/images/E3.jpg" alt="Beyonce">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 container">
+                                        <div class="row inner-event label-det">
+                                            <div class="col col-label-txt"><input type="date" id="start" name="trip-start"
+                                                value="2023-03-02"
+                                                min="2023-03-01" max="2023-03-31"></div>
+                                        </div>
+                                        <div class="row inner-event label-det">
+                                            <div class="col col-label-txt">Seats Available :</div>
+                                        </div>
+                                        <div class="row inner-event label-det">
+                                            <div class="col col-label-txt">0</div>
+                                        </div>
+                                        <div class="row inner-event label-det">
+                                            <div class="col col-label-txt">
+                                                <a href="/Event/E3-update.html" target="_blank">Sold Out</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                    <div class="col-md-3 disp1 col1">
+                        <div class = "colp1">
+                            <div class="colp1 container inner-event">
+                                <div class="row inner-event header">
+                                    <div class="col-md-12 container">
+                                    <p>Event 4</p>
+                                    </div>
+                                </div>
+                                <div class="row inner-event body-det">
+                                    <div class="col-md-4 container">
+                                        <div class="pic-border">
+                                            <img src="/images/E4.jpg" alt="BTS">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 container">
+                                        <div class="row inner-event label-det">
+                                            <div class="col col-label-txt"><input type="date" id="start" name="trip-start"
+                                                value="2023-03-02"
+                                                min="2023-03-01" max="2023-03-31"></div>
+                                        </div>
+                                        <div class="row inner-event label-det">
+                                            <div class="col col-label-txt">Seats Available :</div>
+                                        </div>
+                                        <div class="row inner-event label-det">
+                                            <div class="col col-label-txt">23</div>
+                                        </div>
+                                        <div class="row inner-event label-det">
+                                            <div class="col col-label-txt">
+                                                <a href="/Event/E4-update.html" target="_blank">Book Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    
+                    </div>
+                </div>
+            
+                <div class="row row-book disp2">
+                    <div class="col-md-3 disp2 col2">
+                        <div class = "colp1">
+                            <div class="colp1 container inner-event">
+                                <div class="row inner-event header">
+                                    <div class="col-md-12 container">
+                                    <p>Event 5</p>
+                                    </div>
+                                </div>
+                                <div class="row inner-event body-det">
+                                    <div class="col-md-4 container">
+                                        <div class="pic-border">
+                                            <img src="/images/E5.jpg" alt="Ilayaraja">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 container">
+                                        <div class="row inner-event label-det">
+                                            <div class="col col-label-txt"><input type="date" id="start" name="trip-start"
+                                                value="2023-03-02"
+                                                min="2023-03-01" max="2023-03-31"></div>
+                                        </div>
+                                        <div class="row inner-event label-det">
+                                            <div class="col col-label-txt">Seats Available :</div>
+                                        </div>
+                                        <div class="row inner-event label-det">
+                                            <div class="col col-label-txt">23</div>
+                                        </div>
+                                        <div class="row inner-event label-det">
+                                            <div class="col col-label-txt">
+                                                <a href="/Event/E5-update.html" target="_blank">Book Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-3 disp2 col2">
+                        <div class = "colp1">
+                            <div class="colp1 container inner-event">
+                                <div class="row inner-event header">
+                                    <div class="col-md-12 container">
+                                    <p>Event 6</p>
+                                    </div>
+                                </div>
+                                <div class="row inner-event body-det">
+                                    <div class="col-md-4 container">
+                                        <div class="pic-border">
+                                            <img src="/images/E6.jpg" alt="BlackPink">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 container">
+                                        <div class="row inner-event label-det">
+                                            <div class="col col-label-txt"><input type="date" id="start" name="trip-start"
+                                                value="2023-03-02"
+                                                min="2023-03-01" max="2023-03-31"></div>
+                                        </div>
+                                        <div class="row inner-event label-det">
+                                            <div class="col col-label-txt">Seats Available :</div>
+                                        </div>
+                                        <div class="row inner-event label-det">
+                                            <div class="col col-label-txt">0</div>
+                                        </div>
+                                        <div class="row inner-event label-det">
+                                            <div class="col col-label-txt">
+                                                <a href="/Event/E6-update.html" target="_blank">Sold Out</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-md-3 disp2 col2">
+                        <div class = "colp1">
+                            <div class="colp1 container inner-event">
+                                <div class="row inner-event header">
+                                    <div class="col-md-12 container">
+                                    <p>Event 7</p>
+                                    </div>
+                                </div>
+                                <div class="row inner-event body-det">
+                                    <div class="col-md-4 container">
+                                        <div class="pic-border">
+                                            <img src="/images/E7.jpg" alt="Dave Chapelle">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 container">
+                                        <div class="row inner-event label-det">
+                                            <div class="col col-label-txt"><input type="date" id="start" name="trip-start"
+                                                value="2023-03-02"
+                                                min="2023-03-01" max="2023-03-31"></div>
+                                        </div>
+                                        <div class="row inner-event label-det">
+                                            <div class="col col-label-txt">Seats Available :</div>
+                                        </div>
+                                        <div class="row inner-event label-det">
+                                            <div class="col col-label-txt">23</div>
+                                        </div>
+                                        <div class="row inner-event label-det">
+                                            <div class="col col-label-txt">
+                                                <a href="/Event/E7-update.html" target="_blank">Book Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> 
+                    <div class="col-md-3 disp2 col2">
+                        <div class = "colp1">
+                            <div class="colp1 container inner-event">
+                                <div class="row inner-event header">
+                                    <div class="col-md-12 container">
+                                    <p>Event 8</p>
+                                    </div>
+                                </div>
+                                <div class="row inner-event body-det">
+                                    <div class="col-md-4 container">
+                                        <div class="pic-border">
+                                            <img src="/images/E8.jpg" alt="Shreya Ghoshal">
+                                        </div>
+                                    </div>
+                                    <div class="col-md-8 container">
+                                        <div class="row inner-event label-det">
+                                            <div class="col col-label-txt"><input type="date" id="start" name="trip-start"
+                                                value="2023-03-02"
+                                                min="2023-03-01" max="2023-03-31"></div>
+                                        </div>
+                                        <div class="row inner-event label-det">
+                                            <div class="col col-label-txt">Seats Available :</div>
+                                        </div>
+                                        <div class="row inner-event label-det">
+                                            <div class="col col-label-txt">23</div>
+                                        </div>
+                                        <div class="row inner-event label-det">
+                                            <div class="col col-label-txt">
+                                                <a href="/Event/E8-update.html" target="_blank">Book Now</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                   
+            </div>
+        </div>
+    </div> 
+
+    <div>
+
+    </div>
+    
+</body>
+</html> 
+
